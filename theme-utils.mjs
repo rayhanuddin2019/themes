@@ -1083,7 +1083,7 @@ async function escapePatterns() {
 		const rewriter = new RewritingStream();
 
 		rewriter.on('text', (_, raw) => {
-			rewriter.emitRaw(translateText(raw, themeSlug));
+			rewriter.emitRaw(escapeText(raw, themeSlug));
 		});
 
 		rewriter.on('startTag', (startTag) => {
@@ -1091,9 +1091,9 @@ async function escapePatterns() {
 				const attrs = startTag.attrs.filter(attr => ['src', 'alt'].includes(attr.name));
 				attrs.forEach(attr => {
 					if (attr.name === 'src') {
-						attr.value = updateImagePath(attr.value);
+						attr.value = escapeImagePath(attr.value);
 					} else if (attr.name === 'alt') {
-						attr.value = translateText(attr.value, themeSlug);
+						attr.value = escapeText(attr.value, themeSlug, true);
 					}
 				});
 			}
@@ -1104,13 +1104,14 @@ async function escapePatterns() {
 		return rewriter;
 	}
 
-	function translateText(text, themeSlug) {
+	function escapeText(text, themeSlug, isAttr = false) {
 		const trimmedText = text && text.trim();
 		if (!themeSlug || !trimmedText || trimmedText.startsWith(`<?php`)) return text;
-		return `<?php echo esc_html__( '${text.replace('\'', '\\\'')}', '${themeSlug}' ); ?>`;
+		const escFunction = isAttr ? 'esc_attr__' : 'esc_html__';
+		return `<?php echo ${escFunction}( '${text.replace('\'', '\\\'')}', '${themeSlug}' ); ?>`;
 	}
 
-	function updateImagePath(src) {
+	function escapeImagePath(src) {
 		if (!src || src.trim().startsWith('<?php')) return src;
 		
 		const assetsDir = 'assets';
