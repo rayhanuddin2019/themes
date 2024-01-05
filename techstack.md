@@ -1,7 +1,8 @@
 <!--
---- Readme.md Snippet without images Start ---
+&lt;--- Readme.md Snippet without images Start ---&gt;
 ## Tech Stack
 rayhanuddin2019/themes is built on the following main stack:
+
 - [WordPress](http://wordpress.org) – Self-Hosted Blogging / CMS
 - [PHP](http://www.php.net/) – Languages
 - [Sass](http://sass-lang.com/) – CSS Pre-processors / Extensions
@@ -14,11 +15,13 @@ rayhanuddin2019/themes is built on the following main stack:
 - [GitHub Actions](https://github.com/features/actions) – Continuous Integration
 
 Full tech stack [here](/techstack.md)
---- Readme.md Snippet without images End ---
 
---- Readme.md Snippet with images Start ---
+&lt;--- Readme.md Snippet without images End ---&gt;
+
+&lt;--- Readme.md Snippet with images Start ---&gt;
 ## Tech Stack
 rayhanuddin2019/themes is built on the following main stack:
+
 - <img width='25' height='25' src='https://img.stackshare.io/service/250/logo.png' alt='WordPress'/> [WordPress](http://wordpress.org) – Self-Hosted Blogging / CMS
 - <img width='25' height='25' src='https://img.stackshare.io/service/991/hwUcGZ41_400x400.jpg' alt='PHP'/> [PHP](http://www.php.net/) – Languages
 - <img width='25' height='25' src='https://img.stackshare.io/service/1171/jCR2zNJV.png' alt='Sass'/> [Sass](http://sass-lang.com/) – CSS Pre-processors / Extensions
@@ -31,14 +34,15 @@ rayhanuddin2019/themes is built on the following main stack:
 - <img width='25' height='25' src='https://img.stackshare.io/service/11563/actions.png' alt='GitHub Actions'/> [GitHub Actions](https://github.com/features/actions) – Continuous Integration
 
 Full tech stack [here](/techstack.md)
---- Readme.md Snippet with images End ---
+
+&lt;--- Readme.md Snippet with images End ---&gt;
 -->
 <div align="center">
 
 # Tech Stack File
 ![](https://img.stackshare.io/repo.svg "repo") [rayhanuddin2019/themes](https://github.com/rayhanuddin2019/themes)![](https://img.stackshare.io/public_badge.svg "public")
 <br/><br/>
-|26<br/>Tools used|11/10/23 <br/>Report generated|
+|28<br/>Tools used|01/05/24 <br/>Report generated|
 |------|------|
 </div>
 
@@ -183,9 +187,9 @@ Full tech stack [here](/techstack.md)
 </table>
 
 
-## <img src='https://img.stackshare.io/group.svg' /> Open source packages (11)</h2>
+## <img src='https://img.stackshare.io/group.svg' /> Open source packages (13)</h2>
 
-## <img width='24' height='24' src='https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png'/> npm (11)
+## <img width='24' height='24' src='https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png'/> npm (13)
 
 |NAME|VERSION|LAST UPDATED|LAST UPDATED BY|LICENSE|VULNERABILITIES|
 |:------|:------|:------|:------|:------|:------|
@@ -193,7 +197,9 @@ Full tech stack [here](/techstack.md)
 |[chokidar-cli](https://www.npmjs.com/chokidar-cli)|v3.0.0|01/12/22|Sarah Norris |MIT|N/A|
 |[core-util-is](https://www.npmjs.com/core-util-is)|v1.0.2|01/14/22|Sarah Norris |MIT|N/A|
 |[fs-extra](https://www.npmjs.com/fs-extra)|v10.0.0|12/13/21|Jason Crist |MIT|N/A|
+|[husky](https://www.npmjs.com/husky)|v7.0.4|02/15/22|Jeff Ong |MIT|N/A|
 |[inquirer](https://www.npmjs.com/inquirer)|v8.2.0|01/12/22|Sarah Norris |MIT|N/A|
+|[lint-staged](https://www.npmjs.com/lint-staged)|v12.3.4|02/16/22|Sarah Norris |MIT|N/A|
 |[minimist](https://www.npmjs.com/minimist)|v1.2.5|06/30/20|Jeff Ong |MIT|[CVE-2021-44906](https://github.com/advisories/GHSA-xvch-5gv4-984h) (Critical)|
 |[node-sass](https://www.npmjs.com/node-sass)|v7.0.1|01/12/22|Sarah Norris |MIT|N/A|
 |[npm-run-all](https://www.npmjs.com/npm-run-all)|v4.1.5|09/17/20|Ben Dwyer |MIT|N/A|
@@ -204,4 +210,4 @@ Full tech stack [here](/techstack.md)
 <br/>
 <div align='center'>
 
-Generated via [Stack File](https://github.com/apps/stack-file)
+Generated via [Stack File](https://github.com/marketplace/stack-file)
